@@ -1,4 +1,4 @@
-![ZipSteganograPy logo](https://mauricelambert.github.io/info/python/code/ZipSteganograPy_small.png "ZipSteganograPy logo")
+![ZipSteganograPy logo](https://mauricelambert.github.io/info/python/security/ZipSteganograPy_small.png "ZipSteganograPy logo")
 # ZipSteganograPy
 
 ## Description
@@ -44,8 +44,8 @@ unzip stegano.jpg -d output/                 # extract
 
  - [Github Page](https://github.com/mauricelambert/ZipSteganograPy/)
  - [Pypi package](https://pypi.org/project/ZipSteganograPy/)
- - [Documentation](https://mauricelambert.github.io/info/python/code/ZipSteganograPy.html)
- - [Python Executable](https://mauricelambert.github.io/info/python/code/ZipSteganograPy.pyz)
+ - [Documentation](https://mauricelambert.github.io/info/python/security/ZipSteganograPy.html)
+ - [Python Executable](https://mauricelambert.github.io/info/python/security/ZipSteganograPy.pyz)
 
 ## Licence
 

@@ -8,8 +8,8 @@ Author-email: mauricelambert434@gmail.com
 Maintainer: Maurice Lambert
 Maintainer-email: mauricelambert434@gmail.com
 License: GPL-3.0 License
-Project-URL: Documentation, https://mauricelambert.github.io/info/python/code/ZipSteganograPy.html
-Project-URL: Executable, https://mauricelambert.github.io/info/python/code/ZipSteganograPy.pyz
+Project-URL: Documentation, https://mauricelambert.github.io/info/python/security/ZipSteganograPy.html
+Project-URL: Executable, https://mauricelambert.github.io/info/python/security/ZipSteganograPy.pyz
 Keywords: Steganography,Hide,Image,archive,ZIP,PNG,JPG,JPEG
 Platform: Windows
 Platform: Linux
@@ -27,7 +27,7 @@ Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE.txt
 
-![ZipSteganograPy logo](https://mauricelambert.github.io/info/python/code/ZipSteganograPy_small.png "ZipSteganograPy logo")
+![ZipSteganograPy logo](https://mauricelambert.github.io/info/python/security/ZipSteganograPy_small.png "ZipSteganograPy logo")
 # ZipSteganograPy
 
 ## Description
@@ -73,8 +73,8 @@ unzip stegano.jpg -d output/                 # extract
 
  - [Github Page](https://github.com/mauricelambert/ZipSteganograPy/)
  - [Pypi package](https://pypi.org/project/ZipSteganograPy/)
- - [Documentation](https://mauricelambert.github.io/info/python/code/ZipSteganograPy.html)
- - [Python Executable](https://mauricelambert.github.io/info/python/code/ZipSteganograPy.pyz)
+ - [Documentation](https://mauricelambert.github.io/info/python/security/ZipSteganograPy.html)
+ - [Python Executable](https://mauricelambert.github.io/info/python/security/ZipSteganograPy.pyz)
 
 ## Licence
 
