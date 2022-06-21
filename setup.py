@@ -15,8 +15,8 @@ setup(
     long_description_content_type="text/markdown",
     url=package.__url__,
     project_urls={
-        "Documentation": "https://mauricelambert.github.io/info/python/security/ZipSteganograPy.html",
-        "Executable": "https://mauricelambert.github.io/info/python/security/ZipSteganograPy.pyz",
+        "Documentation": "https://mauricelambert.github.io/info/python/code/ZipSteganograPy.html",
+        "Executable": "https://mauricelambert.github.io/info/python/code/ZipSteganograPy.pyz",
     },
     classifiers=[
         "Programming Language :: Python",
