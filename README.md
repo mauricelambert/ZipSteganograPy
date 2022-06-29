@@ -46,6 +46,7 @@ unzip stegano.jpg -d output/                 # extract
 This example load a python code from an image and execute it without writing it on the disk.
 
 This method bypass:
+
 [x] basic anti-virus analyze based on signatures of files written on the disk
 [ ] behavior module
 [ ] process memory analyze
@@ -81,6 +82,22 @@ with ZipFile("stegano.png", "r") as f:
     for filename in f.namelist():
         exec(f.read(filename).decode())
 ```
+
+```python
+import zipfile;f=zipfile.ZipFile("stegano.png", "r");[exec(f.read(filename).decode()) for filename in f.namelist()]
+```
+
+```sh
+python3 -c 'import zipfile;f=zipfile.ZipFile("stegano.png", "r");[exec(f.read(filename).decode()) for filename in f.namelist()]'
+```
+
+#### Proof
+
+![Bypass AV proof](https://raw.githubusercontent.com/mauricelambert/ZipSteganograPy/main/BypassAntivirus_Stegano.PNG "Bypass AV proof")
+
+![Working proof](https://raw.githubusercontent.com/mauricelambert/ZipSteganograPy/main/demo.png "Working proof")
+
+![Working proof](https://raw.githubusercontent.com/mauricelambert/ZipSteganograPy/main/demo1.png "Working proof")
 
 ## Links
 
