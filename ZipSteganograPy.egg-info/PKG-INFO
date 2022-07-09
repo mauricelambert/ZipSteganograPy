@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ZipSteganograPy
-Version: 0.0.3
+Version: 0.0.4
 Summary: This tool hides a ZIP archive in an image.
 Home-page: https://github.com/mauricelambert/ZipSteganograPy
 Author: Maurice Lambert
@@ -8,8 +8,8 @@ Author-email: mauricelambert434@gmail.com
 Maintainer: Maurice Lambert
 Maintainer-email: mauricelambert434@gmail.com
 License: GPL-3.0 License
-Project-URL: Documentation, https://mauricelambert.github.io/info/python/code/ZipSteganograPy.html
-Project-URL: Executable, https://mauricelambert.github.io/info/python/code/ZipSteganograPy.pyz
+Project-URL: Documentation, https://mauricelambert.github.io/info/python/security/ZipSteganograPy.html
+Project-URL: Executable, https://mauricelambert.github.io/info/python/security/ZipSteganograPy.pyz
 Keywords: Steganography,Hide,Image,archive,ZIP,PNG,JPG,JPEG
 Platform: Windows
 Platform: Linux
@@ -76,9 +76,9 @@ This example load a python code from an image and execute it without writing it 
 
 This method bypass:
 
-[x] basic anti-virus analyze based on signatures of files written on the disk
-[ ] behavior module
-[ ] process memory analyze
+ - [x] basic anti-virus analyze based on signatures of files written on the disk
+ - [ ] behavior module
+ - [ ] process memory analyze
 
 ```python
 from zipfile import ZipFile

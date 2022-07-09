@@ -47,9 +47,9 @@ This example load a python code from an image and execute it without writing it 
 
 This method bypass:
 
-[x] basic anti-virus analyze based on signatures of files written on the disk
-[ ] behavior module
-[ ] process memory analyze
+ - [x] basic anti-virus analyze based on signatures of files written on the disk
+ - [ ] behavior module
+ - [ ] process memory analyze
 
 ```python
 from zipfile import ZipFile
